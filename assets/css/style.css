@@ -1,0 +1,13 @@
+.gradient-custom {
+    background: #667eea;
+    background: -webkit-linear-gradient(to right, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
+    background: linear-gradient(to right, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1));
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .searchHeader{
+      font-weight: bold;
+  }
+  #forecastHeader{
+    font-size: 1.7rem;
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <header class="col-12 p-3 gradient-custom text-white text-center">Weather Dashboard</header>
+    <main class="d-flex ">
+        <section class="col-4 d-flex flex-column " id="citySearch">
+            <form class="border-bottom border-dark">
+                <div class="form-group">
+                    <label for="searchBar" class="mt-2">
+                        <h3 class=" searchHeader">Search for a City:</h3>
+                    </label>
+                    <input type="text" class="form-control mb-2" id="searchBar" placeholder="Richmond">
+                    <button type="submit" class="btn btn-primary mb-2 col-12">Search</button>
+                </div>
+            </form>
+
+            <!--<button type="submit" class="btn btn-primary mt-4">Richmond</button>-->
+
+        </section>
+        <section class="col-8 d-flex flex-column" id="weatherInfo"></section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
