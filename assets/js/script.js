@@ -22,7 +22,7 @@ var apiUrl = "";
 var temp;
 
 function checkLocation() {
-    var apiLocation = "http://api.openweathermap.org/geo/1.0/direct?q=" + loc.name + "&appid=" + apiKey;
+    var apiLocation = "https://api.openweathermap.org/geo/1.0/direct?q=" + loc.name + "&appid=" + apiKey;
     fetch(apiLocation).then(function (response) {
         if (response.ok) {
             response.json().then(function (data) {
@@ -71,7 +71,7 @@ function displayWeather(weather) {
     removeAllChildNodes(parent);
     tempDisp = tempConv(weather.current.temp);
     dateDisp = dateConv(weather.current.dt);
-    var iconurl = "http://openweathermap.org/img/w/" + weather.current.weather[0].icon + ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + weather.current.weather[0].icon + ".png";
     $("#weatherInfo").append([
         $("<div>", { "class": "border border-dark mt-1" }).append([
             $("<h2>").text(loc.name + ' ' + dateDisp).append(
@@ -89,7 +89,7 @@ function displayWeather(weather) {
     $("#uvSpan").css("background-color", spanColorVals[0]);
     $("#uvSpan").css("color", spanColorVals[1]);
     for (var i = 1; i < 6; i++) {
-        var iconurl = "http://openweathermap.org/img/w/" + weather.daily[i].weather[0].icon + ".png";
+        var iconurl = "https://openweathermap.org/img/w/" + weather.daily[i].weather[0].icon + ".png";
         tempDisp = tempConv(weather.daily[i].temp.day);
         dateDisp = dateConv(weather.daily[i].dt)
         $(".dayContainer").append(
