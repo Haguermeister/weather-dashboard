@@ -11,3 +11,13 @@
   #forecastHeader{
     font-size: 1.7rem;
   }
+  p{
+    font-size: 1rem;
+  }
+  #uvSpan{
+    border-radius: 20%;
+    padding: .5rem;
+  }
+  .btn{
+  border: 0;
+  }
