@@ -1,9 +1,9 @@
 # Weather Dashboard
 Weather Dashboard Project Due : 16 Jan 2022
 
-## Github Repo Link : 
+## Github Repo Link : https://github.com/Haguermeister/weather-dashboard
 
-## Webpage Link : 
+## Webpage Link : https://haguermeister.github.io/weather-dashboard/
 
 ## Screenshot Below :
 ![alt text](./assets/images/ScreenShot.png)
