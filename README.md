@@ -1,4 +1,4 @@
-# Scheduler
+# Weather Dashboard
 Weather Dashboard Project Due : 16 Jan 2022
 
 ## Github Repo Link : 
@@ -17,7 +17,7 @@ Weather Dashboard Project Due : 16 Jan 2022
 ---
 #### GIVEN a weather dashboard with form inputs
 #### WHEN I search for a city
-#### THEN I am presented with current and future conditions for that city and that city is added to the search history
+#### THEN I am presented with current and future conditions for that city and that city is added to the search history XXX
 #### WHEN I view current weather conditions for that city
 #### THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index XXX
 #### WHEN I view the UV index
@@ -25,4 +25,4 @@ Weather Dashboard Project Due : 16 Jan 2022
 #### WHEN I view future weather conditions for that city
 #### THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity XXX
 #### WHEN I click on a city in the search history
-#### THEN I am again presented with current and future conditions for that city
+#### THEN I am again presented with current and future conditions for that city XXX
