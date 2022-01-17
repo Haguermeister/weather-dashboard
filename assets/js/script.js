@@ -26,12 +26,20 @@ function checkLocation() {
     fetch(apiLocation).then(function (response) {
         if (response.ok) {
             response.json().then(function (data) {
-                loc.lat = data[0].lat;
-                loc.lon = data[0].lon;
-                apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + loc.lat + "&lon=" + loc.lon + "&exclude=hourly,minutely&appid=" + apiKey;
-                checkWeather();
+                console.log(data);
+                if (data.length > 0) {
+                    loc.lat = data[0].lat;
+                    loc.lon = data[0].lon;
+                    apiUrl = "https://api.openweathermap.org/data/2.5/onecall?lat=" + loc.lat + "&lon=" + loc.lon + "&exclude=hourly,minutely&appid=" + apiKey;
+                    checkWeather();
+                }
+                else {
+                    console.log("Test")
+                    $("#weatherInfo").text("Error: City can not be found.").css("color", "red");
+                }
             });
         }
+
     });
 }
 function checkWeather() {
@@ -69,6 +77,8 @@ function checkWeather() {
 function displayWeather(weather) {
     var parent = document.getElementById("weatherInfo");
     removeAllChildNodes(parent);
+    $("#weatherInfo").css("color", "black");
+
     tempDisp = tempConv(weather.current.temp);
     dateDisp = dateConv(weather.current.dt);
     var iconurl = "https://openweathermap.org/img/w/" + weather.current.weather[0].icon + ".png";
